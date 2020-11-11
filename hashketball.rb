@@ -152,7 +152,7 @@ end
 def team_colors(team_name)
   game_hash.each do |team,keys|
     if keys[:team_name] == team_name
-      keys[:colors]
+      keys[:colors].map
     end
   end
 end
