@@ -148,6 +148,19 @@ def shoe_size(player_name)
   player_helper[:shoe]
 end
 
+
+def team_colors(team_name)
+  name = game_hash.each do |team|
+    game_hash[team][:colors]
+  end
+  name[:colors]
+end
+  
+
+
+
+
+
 def team_colors(team_name)
   game_hash.each do |home_away, keys|
     if keys[:team_name] == team_name
